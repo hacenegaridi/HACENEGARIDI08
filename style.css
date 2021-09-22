@@ -295,6 +295,40 @@ html {
 	justify-content: space-between;
 	align-items: center;
 }
+.heart h4 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.icon-heart {
+	/*icone coeur qui se remplit*/
+	margin-right: 25px;
+	font-size: 1.8em;
+	position: relative;
+}
+.icon-heart:hover .full-heart,
+.icon-heart:active .full-heart {
+	transition: transform;
+	transform: scale(1);
+	animation: like 2.5s;
+	background: linear-gradient(to top left, #9356dc, #ff79da);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.icon-heart:hover .empty-heart,
+.icon-heart:active .empty-heart {
+	background: linear-gradient(to top left, #9356dc, #ff79da);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.icon-heart .full-heart {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 1px;
+	transform: scale(0);
+	transform-origin: bottom;
+}
 
 .card figure {
 	margin: 0;
@@ -305,10 +339,6 @@ html {
 	padding: 10px;
 }
 
-.heart h4 {
-	margin: 0;
-	font-size: 1.5rem;
-}
 /* FOOTER*/
 
 footer {
