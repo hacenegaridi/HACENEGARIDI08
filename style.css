@@ -241,6 +241,16 @@ html {
 	}
 }
 
+.Nouveau {
+	color: #008766;
+	background: #99e2d0;
+	border: 5px solid #99e2d0;
+	border-radius: 5px;
+	position: absolute;
+	right: 1%;
+	top: 5%;
+}
+
 .main_restaurant {
 	background: #f2f2f2;
 	display: flex;
