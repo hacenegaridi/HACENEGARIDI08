@@ -37,3 +37,36 @@ html {
 }
 
 /*Page_ principale*/
+
+.loader {
+	background: -webkit-linear-gradient(#ffffff, #ff79da, #9356dc);
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	line-height: 100%;
+	font-family: Shrikhand, sans-serif;
+	font-size: x-large;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	animation: loader 1s ease-in-out 2s forwards;
+}
+
+.loader_food {
+	vertical-align: middle;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+
+.loader_fork {
+	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	animation: rotate 1s linear infinite;
+	align-items: center;
+}
