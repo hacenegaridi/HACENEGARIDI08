@@ -61,6 +61,18 @@ html {
 	top: 40%;
 	left: 40%;
 }
+@media screen and (min-width: 768px) {
+	.loader_food {
+		top: 40%;
+		left: 35%;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.loader_food {
+		top: 40%;
+		left: 45%;
+	}
+}
 
 .loader_fork {
 	vertical-align: middle;
@@ -69,4 +81,29 @@ html {
 	left: 50%;
 	animation: rotate 1s linear infinite;
 	align-items: center;
+}
+.loader__food span {
+	display: inline-block;
+	width: 5px;
+	height: 20px;
+	padding-right: 1em;
+}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes loader {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+	}
 }
