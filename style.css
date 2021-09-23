@@ -538,6 +538,7 @@ footer ul .fa-hands-helping {
 		width: 400px;
 	}
 }
+/*
 @keyframes fadein {
 	from {
 		opacity: 0;
@@ -545,7 +546,7 @@ footer ul .fa-hands-helping {
 	to {
 		opacity: 1;
 	}
-}
+}*/
 
 .cross {
 	display: flex;
@@ -561,7 +562,13 @@ footer ul .fa-hands-helping {
 	right: -50px;
 	top: 0;
 	opacity: 0;
-	transition: transform 330ms ease-in-out;
+	transition: all 500ms linear;
+}
+.cross :hover {
+	background-color: #99e2d0;
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
 }
 .cross .fa-check-circle {
 	color: #fff;
