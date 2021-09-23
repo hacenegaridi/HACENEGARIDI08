@@ -241,7 +241,7 @@ html {
 	}
 }
 
-.Nouveau {
+.nouveau {
 	color: #008766;
 	background: #99e2d0;
 	border: 5px solid #99e2d0;
@@ -300,35 +300,30 @@ html {
 	font-size: 1.5rem;
 }
 
-.icon-heart {
-	/*icone coeur qui se remplit*/
-	margin-right: 25px;
-	font-size: 1.8em;
-	position: relative;
+.fill {
+	color: black;
+	cursor: pointer;
 }
-.icon-heart:hover .full-heart,
-.icon-heart:active .full-heart {
-	transition: transform;
-	transform: scale(1);
-	animation: like 2.5s;
-	background: linear-gradient(to top left, #9356dc, #ff79da);
+.fill:hover {
+	animation: fill 0.3s ease-in-out;
+	display: inline-block;
+	opacity: 1;
+	background: linear-gradient(to left, #9356dc, #b35cdc, #ff79da);
+	background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #ff79da);
 	-webkit-background-clip: text;
-	color: transparent;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
 }
-.icon-heart:hover .empty-heart,
-.icon-heart:active .empty-heart {
-	background: linear-gradient(to top left, #9356dc, #ff79da);
-	-webkit-background-clip: text;
-	color: transparent;
+
+@keyframes anim_coeur {
+	0% {
+		transform: scale(0.1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
 }
-.icon-heart .full-heart {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 1px;
-	transform: scale(0);
-	transform-origin: bottom;
-}
+/* Animation carte Menu */
 
 .card figure {
 	margin: 0;
